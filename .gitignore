@@ -1,0 +1,93 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Raw + derived data is large + reproducible; do not commit.
+data/13f/
+data/features/
+data/tickers/sp500_history.parquet
+data/13f_cache/
+runs/
+
+# Secrets
+.env
+.env.local
+
+# Editor
+.vscode/
+.idea/
+.DS_Store
+data/finnhub_cache/
+
+# OpenFIGI cusip resolution cache (5-10 MB)
+data/openfigi_cache/
+
+# Playwright persistent browser profile (~100 MB; contains FT login cookies)
+data/playwright_profile/
+
+# Heavier caches
+data/edgar_cache/
+data/prices_cache/
+data/gemma_cache/
+
+# Reddit JSON cache
+data/reddit_cache/
+
+# Newly-added scrapers' caches (added 2026-05-28 / 2026-06-01)
+data/ft_alphaville_cache/
+data/hackernews_cache/
+data/stocktwits_cache/
+data/yfinance_cache/
+data/congress_cache/
+
+# Multi-channel scrape caches (large, regenerable)
+data/dataroma_cache/
+data/finviz_cache/
+data/gurufocus_cache/
+data/reddit_history_cache/
+data/seekingalpha_cache/
+data/stockanalysis_cache/
+data/stocktwits_hist_cache/
+data/substack_cache/
+data/tipranks_cache/
+data/whalewisdom_cache/
+data/motleyfool_cache/
+data/aaii_cache/
+data/damodaran_cache/
+data/edgar_riskfactors_cache/
+data/news_rss_cache/
+data/tradingview_cache/
+data/ark_cache/
+data/stocktwits_trend_cache/
+data/wikipedia_cache/
+data/finra_cache/
+data/openinsider_cache/
+data/sec_13d_cache/
+data/google_trends_cache/
+data/yahoo_holders_cache/
+data/insider_monkey_cache/
+data/macrotrends_cache/
+data/cftc_cot_cache/
+data/nyt_cache/
+data/guardian_cache/
+data/alpha_vantage_cache/
+data/pocket_inbox/
+data/sec_xbrl_cache/
+data/sec_13f_breadth_cache/
+data/options_cache/
+data/gdelt_cache/
+.gstack/
+runs/opt/
+runs/guild_work/
+.codex-reviews/
+data/universe/cmc_page*.html
+data/reddit_corpus/author_ticker_month.parquet
+data/reddit_corpus/wisdom_snippets.json
+*.log

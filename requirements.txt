@@ -1,0 +1,15 @@
+# Deployed runtime (Dockerfile installs this). Pinned to the validated working
+# set so a `docker build` can't silently pull a breaking upstream release.
+# Bump deliberately, re-run `pytest` + a local boot, then commit.
+streamlit==1.58.0
+pandas==3.0.3
+numpy==2.4.6
+pyarrow==24.0.0
+lightgbm==4.6.0
+altair==6.1.0
+scikit-learn==1.9.0
+numerapi==2.23.2
+python-substack==0.1.22
+praw==7.8.1
+tweepy==4.16.0
+ib_async==2.1.0  # IBKR TWS API client for paper/live order placement (scripts/paper_trade_ibkr.py)
